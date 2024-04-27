@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updating Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <h1>Updating Menu</h1>
+    <p>Choose an option:</p>
+    <div class="center-wrapper">
+        <form action="{{ url_for('update_menu') }}" method="post">
+            <button type="submit" class="glowing-btn" name="option" value="Add_row">
+                <span class="glowing-txt">Add row</span>
+            </button>
+
+            <button type="submit" class="glowing-btn" name="option" value="Update_row">
+                <span class="glowing-txt">Update row</span>
+            </button>
+
+            <button type="submit" class="glowing-btn" name="option" value="Remove_row">
+                <span class="glowing-txt">Remove row</span>
+            </button>
+
+            <button type="submit" class="glowing-btn" name="option" value="Return">
+                <span class="glowing-txt">Return to main menu</span>
+            </button>
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Customer</title>
+</head>
+<body>
+    <h2>Add Customer</h2>
+    <form action="/add_row_customer" method="post">
+        <label for="customer_name">Customer Name:</label>
+        <input type="text" id="customer_name" name="customer_name" required>
+        <br><br>
+        <label for="customer_phone">Customer Phone:</label>
+        <input type="tel" id="customer_phone" name="customer_phone" required>
+        <br><br>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

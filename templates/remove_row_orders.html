@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Orders Row</title>
+</head>
+
+<body>
+    <h2>Remove Orders Row</h2>
+    <form action="/remove_row_orders" method="post">
+        <label for="id_customer">Customer ID:</label>
+        <input type="text" id="id_customer" name="id_customer" required>
+        <br><br>
+        <label for="id_product">Product ID:</label>
+        <input type="text" id="id_product" name="id_product" required>
+        <br><br>
+        <label for="order_date">Order Date:</label>
+        <input type="date" id="order_date" name="order_date" required>
+        <br><br>
+        <button type="submit">Remove Row</button>
+    </form>
+</body>
+
+</html>

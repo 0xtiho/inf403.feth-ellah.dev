@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Select Table</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Orbitron:wght@400..900&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/css/style.css">
+
+<body>
+    <h1>Select Table</h1>
+    <div class="center-wrapper">
+        <form action="/show_rows" method="post">
+            <label for="table_name">Choose a table:</label>
+            <select name="table_name" id="table_name">
+                {% for table in tables %}
+                <option value="{{ table }}">{{ table }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit" class="glowing-btn" name="option">
+                <span class="glowing-txt">Show Rows</span>
+            </button>
+
+
+        </form>
+    </div>
+</body>
+
+</html>

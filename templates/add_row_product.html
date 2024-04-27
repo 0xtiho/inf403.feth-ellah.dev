@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+</head>
+<body>
+    <h2>Add Product</h2>
+    <form action="/add_row_product" method="post">
+        <label for="waste">Waste Type:</label>
+        <select id="waste" name="waste">
+            <option value="plastic">Plastic</option>
+            <option value="glass">Glass</option>
+            <option value="paper">Paper</option>
+            <option value="hardware">Hardware</option>
+            <option value="electronic">Electronic</option>
+        </select>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Row - City</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <h1>Add New City</h1>
+    <form action="/add_row_city" method="POST">
+        <label for="postal_code">Postal Code:</label><br>
+        <input type="number" id="postal_code" name="postal_code" required
+            style="width: 200px; margin: 5px auto; display: block;"><br>
+        <label for="city_name">City Name:</label><br>
+        <input type="text" id="city_name" name="city_name" required
+            style="width: 200px; margin: 20px auto; display: block;"><br>
+        <label for="id_company">Recycling Company ID:</label><br>
+        <input type="number" id="id_company" name="id_company"
+            style="width: 200px; margin: 5px auto; display: block;"><br><br>
+        <div class="center-wrapper">
+            <button type="submit" class="glowing-btn">
+                <span class="glowing-txt">Add City</span>
+            </button>
+        </div>
+    </form>
+</body>
+
+</html>

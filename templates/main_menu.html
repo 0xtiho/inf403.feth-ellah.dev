@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <h1>Main Menu</h1>
+    <p>Choose an option:</p>
+    <div class="center-wrapper">
+        <form action="{{ url_for('menu_option') }}" method="post">
+            <button type="submit" class="glowing-btn" name="option" value="show_tables"><span class="glowing-txt">Show
+                    Tables</span></button>
+            <button type="submit" class="glowing-btn" name="option" value="show_rows"><span class="glowing-txt">Show
+                    Rows</span></button>
+            <button type="submit" class="glowing-btn" name="option" value="update_tables"><span
+                    class="glowing-txt">Update
+                    Tables</span></button>
+            <button type="submit" class="glowing-btn" name="option" value="tools"><span
+                    class="glowing-txt">Tools</span></button>
+            <button type="submit" class="glowing-btn" name="option" value="exit"><span
+                    class="glowing-txt">Exit</span></button>
+        </form>
+    </div>
+</body>
+
+</html>

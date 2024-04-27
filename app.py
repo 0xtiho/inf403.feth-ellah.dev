@@ -91,6 +91,10 @@ def add_row_order():
     else:
         return render_template('add_row_order.html')  # Render the add row form for the 'Order' table
  
+@app.route('/tools', methods=['GET'])
+def tools():
+    return render_template('Soon.html')
+
 @app.route('/add_row_city', methods=['GET'])
 def add_row_city_form():
     return render_template('add_row_city.html')

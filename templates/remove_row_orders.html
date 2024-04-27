@@ -5,21 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remove Orders Row</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 
 <body>
-    <h2>Remove Orders Row</h2>
+    <h1>Remove Orders Row</h1>
     <form action="/remove_row_orders" method="post">
         <label for="id_customer">Customer ID:</label>
-        <input type="text" id="id_customer" name="id_customer" required>
+        <input type="text" id="id_customer" name="id_customer" required
+            style="width: 200px; margin: 5px auto; display: block;">
         <br><br>
         <label for="id_product">Product ID:</label>
-        <input type="text" id="id_product" name="id_product" required>
+        <input type="text" id="id_product" name="id_product" required
+            style="width: 200px; margin: 5px auto; display: block;">
         <br><br>
         <label for="order_date">Order Date:</label>
-        <input type="date" id="order_date" name="order_date" required>
-        <br><br>
-        <button type="submit">Remove Row</button>
+        <input type="date" id="order_date" name="order_date" required
+            style="width: 200px; margin: 5px auto; display: block;">
+        <div class="center-wrapper">
+            <button type="submit" class="glowing-btn">
+                <span class="glowing-txt">Submit</span>
+            </button>
+        </div>
     </form>
 </body>
 

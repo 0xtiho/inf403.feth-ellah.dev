@@ -17,12 +17,15 @@
     <h1>Update Product Row</h1>
     <form action="/update_row_product" method="post">
         <label for="id_product">Product ID:</label>
-        <input type="text" id="id_product" name="id_product" required>
-        <br><br>
+        <input type="text" id="id_product" name="id_product" required
+            style="width: 200px; margin: 5px auto; display: block;">
         <label for="waste">Waste Type:</label>
-        <input type="text" id="waste" name="waste" required>
-        <br><br>
-        <button type="submit">Update Row</button>
+        <input type="text" id="waste" name="waste" required style="width: 200px; margin: 5px auto; display: block;">
+        <div class="center-wrapper">
+            <button type="submit" class="glowing-btn">
+                <span class="glowing-txt">Submit</span>
+            </button>
+        </div>>
     </form>
 </body>
 

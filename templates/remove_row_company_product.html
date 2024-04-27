@@ -5,18 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remove Company Product Row</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 
 <body>
-    <h2>Remove Company Product Row</h2>
+    <h1>Remove Company Product Row</h1>
     <form action="/remove_row_company_product" method="post">
         <label for="id_company">Company ID:</label>
-        <input type="text" id="id_company" name="id_company" required>
+        <input type="text" id="id_company" name="id_company" required
+            style="width: 200px; margin: 5px auto; display: block;">
         <br><br>
         <label for="id_product">Product ID:</label>
-        <input type="text" id="id_product" name="id_product" required>
-        <br><br>
-        <button type="submit">Remove Row</button>
+        <input type="text" id="id_product" name="id_product" required
+            style="width: 200px; margin: 5px auto; display: block;">
+        <div class="center-wrapper">
+            <button type="submit" class="glowing-btn">
+                <span class="glowing-txt">Submit</span>
+            </button>
+        </div>
     </form>
 </body>
 

@@ -81,7 +81,7 @@ h1 {
   font-size: 50px;
   font-family: "Orbitron", sans-serif;
   text-align: center;
-  margin: 10vh 10vh;
+  margin: 10vh 10vh 0vh 10vh;
   color: #fff;
   font-weight: 700;
   animation: glowing 1.5s ease-in-out infinite alternate;
@@ -762,9 +762,9 @@ label {
   color: #ffffff;
 
 }
-input {
-  
-}
+
+input {}
+
 select {
   padding: 10px 10px;
   margin-bottom: 10px;

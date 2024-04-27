@@ -7,17 +7,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 
 <body>
     <h1>Select Table to Remove Row</h1>
-    <form action="{{ url_for('remove_row') }}" method="post">
-        <select name="table_name">
-            {% for table in tables %}
-            <option value="{{ table }}">{{ table }}</option>
-            {% endfor %}
-        </select>
-        <button type="submit">Submit</button>
+    <div class="center-wrapper">
+        <form action="{{ url_for('remove_row') }}" method="post">
+            <select name="table_name">
+                {% for table in tables %}
+                <option value="{{ table }}">{{ table }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit" class="glowing-btn">
+                <span class="glowing-txt">Submit</span>
+            </button>
+    </div>
     </form>
 </body>
 

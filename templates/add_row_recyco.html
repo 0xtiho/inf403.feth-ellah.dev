@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Recycling Company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
+
 <body>
-    <h2>Add Recycling Company</h2>
-    <form action="/add_row_recycling_company" method="post">
+    <h1>Add Recycling Company</h1>
+
+    <form action=" /add_row_recycling_company" method="post">
         <label for="comp_name">Company Name:</label>
-        <input type="text" id="comp_name" name="comp_name" required>
-        <br><br>
-        <button type="submit">Submit</button>
+        <input type="text" id="comp_name" name="comp_name" required
+            style="width: 200px; margin: 5px auto; display: block;"><br>
+        <div class="center-wrapper">
+            <button type="submit" class="glowing-btn">
+                <span class="glowing-txt">Submit</span>
+            </button>
+        </div>
     </form>
+
 </body>
+
 </html>

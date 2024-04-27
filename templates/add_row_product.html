@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
+
 <body>
-    <h2>Add Product</h2>
-    <form action="/add_row_product" method="post">
-        <label for="waste">Waste Type:</label>
-        <select id="waste" name="waste">
-            <option value="plastic">Plastic</option>
-            <option value="glass">Glass</option>
-            <option value="paper">Paper</option>
-            <option value="hardware">Hardware</option>
-            <option value="electronic">Electronic</option>
-        </select>
-        <br><br>
-        <button type="submit">Submit</button>
-    </form>
+    <h1>Add Product</h1>
+    <div class="center-wrapper">
+        <form action=" /add_row_product" method="post">
+            <label for="waste">Waste Type:</label>
+            <select id="waste" name="waste">
+                <option value="plastic">Plastic</option>
+                <option value="glass">Glass</option>
+                <option value="paper">Paper</option>
+                <option value="hardware">Hardware</option>
+                <option value="electronic">Electronic</option>
+            </select>
+            <button type="submit" class="glowing-btn">
+                <span class="glowing-txt">Submit</span>
+            </button>
+        </form>
+    </div>
 </body>
+
 </html>

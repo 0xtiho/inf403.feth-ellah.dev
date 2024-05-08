@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+    <h1>Tools</h1>
+    <p>Choose an option:</p>
+    <div class="center-wrapper">
+        <form action="{{ url_for('tools') }}" method="post">
+            <button type="submit" class="glowing-btn" name="option" value="perform_custom_sql_query"><span
+                    class="glowing-txt">Perform Custom SQL Query</span></button>
+            <button type="submit" class="glowing-btn" name="option" value="customer_by_id"><span
+                    class="glowing-txt">Customer by ID</span></button>
+            <button type="submit" class="glowing-btn" name="option" value="product_by_id"><span
+                    class="glowing-txt">Product by ID</span></button>
+            <button type="submit" class="glowing-btn" name="option" value="order_by_id"><span class="glowing-txt">Order
+                    by ID</span></button>
+            <br>
+            <button type="submit" class="glowing-btn" name="option" value="warehouse_by_id"><span
+                    class="glowing-txt">Warehouse by ID</span></button>
+            <button type="submit" class="glowing-btn" name="option" value="recycling_company_by_id"><span
+                    class="glowing-txt">Recycling Company by ID</span></button>
+            <button type="submit" class="glowing-btn" name="option" value="city_by_postal_code"><span
+                    class="glowing-txt">City by Postal Code</span></button>
+            <button type="submit" class="glowing-btn" name="option" value="orders_by_product_id"><span
+                    class="glowing-txt">Orders by Product ID</span></button>
+            <br>
+            <button type="submit" class="glowing-btn" name="option" value="products_by_customer_id"><span
+                    class="glowing-txt">Products by Customer ID</span></button>
+            <button type="submit" class="glowing-btn" name="option" value="orders_by_city"><span
+                    class="glowing-txt">Orders by City</span></button>
+            <button type="submit" class="glowing-btn" name="option" value="orders_by_date_range"><span
+                    class="glowing-txt">Orders by Date Range</span></button>
+        </form>
+    </div>
+</body>
+
+</html>

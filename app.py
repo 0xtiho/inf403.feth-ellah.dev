@@ -8,7 +8,7 @@ DATABASE = 'db.db'
 def connect_db():
     return sqlite3.connect(DATABASE)
 
-# Function to execute SQL queries
+# Function to execute SQL quer  ies
 def execute_query(query, args=()):
     conn = connect_db()
     cur = conn.cursor()
@@ -91,9 +91,49 @@ def add_row_order():
     else:
         return render_template('add_row_order.html')  # Render the add row form for the 'Order' table
  
-@app.route('/tools', methods=['GET'])
+
+@app.route('/tools', methods=['GET', 'POST'])
 def tools():
-    return render_template('Soon.html')
+    if request.method == 'POST':
+        option = request.form.get('option')
+        if option == 'perform_custom_sql_query':
+            # Perform custom SQL query function
+            return render_template('custom_sql_query.html')
+        elif option == 'customer_by_id':
+            # Fetch customer by ID function
+            return render_template('customer_by_id.html')
+        elif option == 'product_by_id':
+            # Fetch product by ID function
+            return render_template('product_by_id.html')
+        elif option == 'order_by_id':
+            # Fetch order by ID function
+            return render_template('order_by_id.html')
+        elif option == 'warehouse_by_id':
+            # Fetch warehouse by ID function
+            return render_template('warehouse_by_id.html')
+        elif option == 'recycling_company_by_id':
+            # Fetch recycling company by ID function
+            return render_template('recycling_company_by_id.html')
+        elif option == 'city_by_postal_code':
+            # Fetch city by postal code function
+            return render_template('city_by_postal_code.html')
+        elif option == 'orders_by_product_id':
+            # Fetch orders by product ID function
+            return render_template('orders_by_product_id.html')
+        elif option == 'products_by_customer_id':
+            # Fetch products by customer ID function
+            return render_template('products_by_customer_id.html')
+        elif option == 'orders_by_city':
+            # Fetch orders by city function
+            return render_template('orders_by_city.html')
+        elif option == 'orders_by_date_range':
+            # Fetch orders by date range function
+            return render_template('orders_by_date_range.html')
+        # Add more elif blocks for other options
+    return render_template('tools.html')
+
+
+
 
 @app.route('/add_row_city', methods=['GET'])
 def add_row_city_form():

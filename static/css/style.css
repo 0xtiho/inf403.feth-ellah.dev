@@ -518,6 +518,7 @@ body {
   /* Adjusted padding */
   border: 0.15em solid var(--glow-color);
   border-radius: 0.45em;
+  margin: 10px 10px;
   background: none;
   perspective: 2em;
   font-family: "Raleway", sans-serif;

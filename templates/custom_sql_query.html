@@ -5,15 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom SQL Query</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
 
 <body>
-    <h1>Custom SQL Query</h1>
-    <!-- Form for custom SQL query -->
-    <form method="post" action="{{ url_for('custom_sql_query') }}">
-        <textarea name="query" rows="5" cols="50"></textarea><br>
-        <input type="submit" value="Execute Query">
-    </form>
+    <h1>Custom SQL Query (beta) </h1>
+    <div class="center-wrapper">
+        <a href="./main_menu" class="glowing-btn">
+            <span class="glowing-txt">Return</span>
+        </a>
+    </div>
+    <div class="center-wrapper1">
+        <form method="post" action="{{ url_for('custom_sql_query') }}">
+            <textarea name="query" rows="5" cols="50"></textarea><br>
+            <button type="submit" class="glowing-ntb" value="Execute Query"><span class="glowing-txt">Execute
+                    Query</span></button>
+        </form>
+    </div>
 </body>
 
 </html>

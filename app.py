@@ -257,40 +257,45 @@ def tools():
             return render_template('invalid_option.html')
     return render_template('tools.html')
 
-
 def execute_custom_sql_query(query):
     # Connect to the SQLite database
-    conn = sqlite3.connect('your_database.db')
+    conn = connect_db()
     cursor = conn.cursor()
     try:
-        # Execute the SQL query
         cursor.execute(query)
-        # Fetch all results
-        result = cursor.fetchall()
+        result = cursor.fetchall()  # Fetch all rows
     except Exception as e:
-        # If an error occurs during query execution
         result = str(e)
     finally:
-        # Close the database connection
         cursor.close()
         conn.close()
     return result
 
-@app.route('custom_sql_query', methods=['GET', 'POST'])
+# Route for custom SQL query form
+@app.route('/custom_sql_query', methods=['GET', 'POST'])
 def custom_sql_query():
     if request.method == 'POST':
         query = request.form['query']
-        # Call the function to execute the custom SQL query
+        # Check if the query contains any harmful keywords
+        if any(keyword in query.lower() for keyword in ['delete', 'drop', 'truncate']):
+            abort(403)  # Forbidden: User attempted a harmful operation
         result = execute_custom_sql_query(query)
-        # Redirect to the result page with the query result as parameter
-        return redirect(url_for('custom_sql_query_result', result=result))
+        # Convert result list to a string without "result=" prefix
+        result_string = '&'.join(str(row) for row in result)
+        return redirect(url_for('custom_sql_query_result', result=result_string))
     return render_template('custom_sql_query.html')
 
+# Route for displaying custom SQL query results
 @app.route('/custom_sql_query/result')
 def custom_sql_query_result():
     # Get the query result from the URL parameter
-    result = request.args.get('result')
-    return render_template('custom_sql_query_result.html', result=result)
+    result_string = request.args.get('result')
+    # Split the result string into individual results and remove "result="
+    results = [result.replace('result=', '') for result in result_string.split('&')]
+    return render_template('custom_sql_query_result.html', results=results)
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
 
 @app.route('/add_row_city', methods=['GET'])

@@ -87,7 +87,13 @@ h1 {
   animation: glowing 1.5s ease-in-out infinite alternate;
 }
 
+.center-wrapper1 {
+  text-align: center;
+}
 
+.center-wrapper1 button {
+  margin: 5px;
+}
 
 p,
 .intro,
@@ -502,12 +508,46 @@ body {
 
 :root {
   --glow-color: hsl(113, 100%, 51%);
+  --glow-white: hsl(0, 0%, 100%);
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+
+.glowing-ntb {
+  position: relative;
+  color: var(--glow-white);
+  cursor: pointer;
+  padding: 0.5em 1em;
+  /* Adjusted padding */
+  border: 0.15em solid var(--glow-white);
+  border-radius: 0.45em;
+  margin: 10px 10px;
+  background: none;
+  perspective: 2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8em;
+  /* Adjusted font size */
+  font-weight: 900;
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-white),
+    0px 0px 0.5em 0px var(--glow-white);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-whiter),
+    0px 0px 0.5em 0px var(--glow-white);
+  box-shadow: inset 0px 0px 0.5em 0px var(--glow-white),
+    0px 0px 0.5em 0px var(--glow-white);
+  /* Center text vertically */
+  line-height: 1.5;
+  /* Adjust as needed */
+}
+
+.glowing-ntb:hover {
+  color: rgb(149, 149, 149);
+  text-shadow: darkgray;
+  animation: flicker 2s linear infinite;
 }
 
 .glowing-btn {

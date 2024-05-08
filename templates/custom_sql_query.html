@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom SQL Query</title>
+</head>
+
+<body>
+    <h1>Custom SQL Query</h1>
+    <!-- Form for custom SQL query -->
+    <form method="post" action="{{ url_for('custom_sql_query') }}">
+        <textarea name="query" rows="5" cols="50"></textarea><br>
+        <input type="submit" value="Execute Query">
+    </form>
+</body>
+
+</html>

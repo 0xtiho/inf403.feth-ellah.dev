@@ -129,10 +129,168 @@ def tools():
         elif option == 'orders_by_date_range':
             # Fetch orders by date range function
             return render_template('orders_by_date_range.html')
-        # Add more elif blocks for other options
+        elif option == 'customers_by_order_date':
+            # Fetch customers by order date function
+            return render_template('customers_by_order_date.html')
+        elif option == 'products_by_waste_type':
+            # Fetch products by waste type function
+            return render_template('products_by_waste_type.html')
+        elif option == 'orders_by_recycling_company':
+            # Fetch orders by recycling company function
+            return render_template('orders_by_recycling_company.html')
+        elif option == 'orders_by_warehouse':
+            # Fetch orders by warehouse function
+            return render_template('orders_by_warehouse.html')
+        elif option == 'orders_by_city':
+            # Fetch orders by city function
+            return render_template('orders_by_city.html')
+        elif option == 'orders_by_product_type':
+            # Fetch orders by product type function
+            return render_template('orders_by_product_type.html')
+        elif option == 'orders_by_product_waste_type':
+            # Fetch orders by product waste type function
+            return render_template('orders_by_product_waste_type.html')
+        elif option == 'orders_by_product_name':
+            # Fetch orders by product name function
+            return render_template('orders_by_product_name.html')
+        elif option == 'orders_by_product_id':
+            # Fetch orders by product ID function
+            return render_template('orders_by_product_id.html')
+        elif option == 'orders_by_customer_id':
+            # Fetch orders by customer ID function
+            return render_template('orders_by_customer_id.html')
+        elif option == 'orders_by_customer_name':
+            # Fetch orders by customer name function
+            return render_template('orders_by_customer_name.html')
+        elif option == 'customers_by_product_id':
+            # Fetch customers by product ID function
+            return render_template('customers_by_product_id.html')
+        elif option == 'customers_by_product_name':
+            # Fetch customers by product name function
+            return render_template('customers_by_product_name.html')
+        elif option == 'customers_by_city':
+            # Fetch customers by city function
+            return render_template('customers_by_city.html')
+        elif option == 'customers_by_order_date_range':
+            # Fetch customers by order date range function
+            return render_template('customers_by_order_date_range.html')
+        elif option == 'products_by_customer_id':
+            # Fetch products by customer ID function
+            return render_template('products_by_customer_id.html')
+        elif option == 'products_by_customer_name':
+            # Fetch products by customer name function
+            return render_template('products_by_customer_name.html')
+        elif option == 'products_by_customer_city':
+            # Fetch products by customer city function
+            return render_template('products_by_customer_city.html')
+        elif option == 'products_by_customer_order_date_range':
+            # Fetch products by customer order date range function
+            return render_template('products_by_customer_order_date_range.html')
+        elif option == 'products_by_customer_type':
+            # Fetch products by customer type function
+            return render_template('products_by_customer_type.html')
+        elif option == 'products_by_customer_waste_type':
+            # Fetch products by customer waste type function
+            return render_template('products_by_customer_waste_type.html')
+        elif option == 'products_by_customer_id_and_date_range':
+            # Fetch products by customer ID and date range function
+            return render_template('products_by_customer_id_and_date_range.html')
+        elif option == 'products_by_customer_name_and_date_range':
+            # Fetch products by customer name and date range function
+            return render_template('products_by_customer_name_and_date_range.html')
+        elif option == 'products_by_customer_city_and_date_range':
+            # Fetch products by customer city and date range function
+            return render_template('products_by_customer_city_and_date_range.html')
+        elif option == 'products_by_customer_type_and_date_range':
+            # Fetch products by customer type and date range function
+            return render_template('products_by_customer_type_and_date_range.html')
+        elif option == 'products_by_customer_waste_type_and_date_range':
+            # Fetch products by customer waste type and date range function
+            return render_template('products_by_customer_waste_type_and_date_range.html')
+        elif option == 'customers_by_product_id_and_date_range':
+            # Fetch customers by product ID and date range function
+            return render_template('customers_by_product_id_and_date_range.html')
+        elif option == 'customers_by_product_name_and_date_range':
+            # Fetch customers by product name and date range function
+            return render_template('customers_by_product_name_and_date_range.html')
+        elif option == 'customers_by_city_and_date_range':
+            # Fetch customers by city and date range function
+            return render_template('customers_by_city_and_date_range.html')
+        elif option == 'customers_by_product_type_and_date_range':
+            # Fetch customers by product type and date range function
+            return render_template('customers_by_product_type_and_date_range.html')
+        elif option == 'customers_by_product_waste_type_and_date_range':
+            # Fetch customers by product waste type and date range function
+            return render_template('customers_by_product_waste_type_and_date_range.html')
+        elif option == 'orders_by_warehouse_and_date_range':
+            # Fetch orders by warehouse and date range function
+            return render_template('orders_by_warehouse_and_date_range.html')
+        elif option == 'orders_by_recycling_company_and_date_range':
+            # Fetch orders by recycling company and date range function
+            return render_template('orders_by_recycling_company_and_date_range.html')
+        elif option == 'orders_by_city_and_date_range':
+            # Fetch orders by city and date range function
+            return render_template('orders_by_city_and_date_range.html')
+        elif option == 'orders_by_product_type_and_date_range':
+            # Fetch orders by product type and date range function
+            return render_template('orders_by_product_type_and_date_range.html')
+        elif option == 'orders_by_product_waste_type_and_date_range':
+            # Fetch orders by product waste type and date range function
+            return render_template('orders_by_product_waste_type_and_date_range.html')
+        elif option == 'orders_by_product_name_and_date_range':
+            # Fetch orders by product name and date range function
+            return render_template('orders_by_product_name_and_date_range.html')
+        elif option == 'orders_by_product_id_and_date_range':
+            # Fetch orders by product ID and date range function
+            return render_template('orders_by_product_id_and_date_range.html')
+        elif option == 'orders_by_customer_id_and_date_range':
+            # Fetch orders by customer ID and date range function
+            return render_template('orders_by_customer_id_and_date_range.html')
+        elif option == 'orders_by_customer_name_and_date_range':
+            # Fetch orders by customer name and date range function
+            return render_template('orders_by_customer_name_and_date_range.html')
+        elif option == 'tools':
+            # Reload the tools page
+            return render_template('tools.html')
+        else:
+            # Handle invalid options
+            return render_template('invalid_option.html')
     return render_template('tools.html')
 
 
+def execute_custom_sql_query(query):
+    # Connect to the SQLite database
+    conn = sqlite3.connect('your_database.db')
+    cursor = conn.cursor()
+    try:
+        # Execute the SQL query
+        cursor.execute(query)
+        # Fetch all results
+        result = cursor.fetchall()
+    except Exception as e:
+        # If an error occurs during query execution
+        result = str(e)
+    finally:
+        # Close the database connection
+        cursor.close()
+        conn.close()
+    return result
+
+@app.route('custom_sql_query', methods=['GET', 'POST'])
+def custom_sql_query():
+    if request.method == 'POST':
+        query = request.form['query']
+        # Call the function to execute the custom SQL query
+        result = execute_custom_sql_query(query)
+        # Redirect to the result page with the query result as parameter
+        return redirect(url_for('custom_sql_query_result', result=result))
+    return render_template('custom_sql_query.html')
+
+@app.route('/custom_sql_query/result')
+def custom_sql_query_result():
+    # Get the query result from the URL parameter
+    result = request.args.get('result')
+    return render_template('custom_sql_query_result.html', result=result)
 
 
 @app.route('/add_row_city', methods=['GET'])
